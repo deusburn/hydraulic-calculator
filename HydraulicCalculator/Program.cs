@@ -23,9 +23,10 @@ namespace HydraulicCalculator
         }
         static void ShowFunction()
         {
-            string begin = "------------------------------- \n" +
-                           " The program has a functional : \n\n";
-            string end = " Please enter the number :";
+            string begin = "------------------------------- \n" + 
+                           " Усі початкові данні ввести в системі CI \n" +
+                           " Калькулятор має такий функціонал : \n\n";
+            string end = " Будь ласка, введіть число :";
             string centralPart = "";
 
             for (int i = 0; i < FormulaProvider.Count; i++)
