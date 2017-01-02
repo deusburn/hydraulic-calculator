@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using HydraulicCalculator.Formulas;
+using HydraulicCalculator.Formulas.Providers;
 
 namespace HydraulicCalculator
 {
@@ -8,7 +10,10 @@ namespace HydraulicCalculator
     {
         static List<IFormulaProvider> FormulaProvider = new List<IFormulaProvider>()
         {
-            
+            new CylinderDiameterFormulaProvider(),
+            new SquarePistonCylinderFormulaProvider(),
+            new SquareRodCylinderFormulaProvider(),
+            new CostsThrottleFormulaProvider()
         };
 
         static void DoAction(int userReaction)
@@ -18,16 +23,6 @@ namespace HydraulicCalculator
         }
         static void ShowFunction()
         {
-            //Console.WriteLine(
-            //    "------------------------------- \n" +
-            //    " The program has a functional : \n\n" +
-            //    " 1. Add post ; \n" +
-            //    " 2. Delete post ; \n" +
-            //    " 3. Show all posts ; \n" +
-            //    " 4. Check note ; \n" +
-            //    " 5. Exit ; \n\n" +
-            //    " Please enter the number :");
-
             string begin = "------------------------------- \n" +
                            " The program has a functional : \n\n";
             string end = " Please enter the number :";
@@ -45,6 +40,7 @@ namespace HydraulicCalculator
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             int userReaction = 0;
 
             do
