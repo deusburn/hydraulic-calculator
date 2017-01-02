@@ -15,7 +15,7 @@ namespace HydraulicCalculator.Formulas.Providers
 
         protected override void WriteResult()
         {
-            Console.WriteLine("{0} = {1:F5}", "Діаметр поршня гідроциліндра", SquarePistonRodCylinder);
+            Console.WriteLine("{0} = {1:F5}", "Площа штокової порожнини циліндра", SquarePistonRodCylinder);
         }
 
         protected override void Calculate()

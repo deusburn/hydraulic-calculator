@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Formulas\AbstractFormulaProvider.cs" />
     <Compile Include="Formulas\IFormulaProvider.cs" />
+    <Compile Include="Formulas\Providers\CostsThrottleFormulaProvider.cs" />
     <Compile Include="Formulas\Providers\CylinderDiameterFormulaProvider.cs" />
     <Compile Include="Formulas\Providers\SquarePistonCylinderFormulaProvider.cs" />
     <Compile Include="Formulas\Providers\SquareRodCylinderFormulaProvider.cs" />

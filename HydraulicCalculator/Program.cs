@@ -12,7 +12,8 @@ namespace HydraulicCalculator
         {
             new CylinderDiameterFormulaProvider(),
             new SquarePistonCylinderFormulaProvider(),
-            new SquareRodCylinderFormulaProvider()
+            new SquareRodCylinderFormulaProvider(),
+            new CostsThrottleFormulaProvider()
         };
 
         static void DoAction(int userReaction)
