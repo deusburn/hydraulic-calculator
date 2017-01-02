@@ -10,7 +10,8 @@ namespace HydraulicCalculator
     {
         static List<IFormulaProvider> FormulaProvider = new List<IFormulaProvider>()
         {
-            new CylinderDiameterFormulaProvider()
+            new CylinderDiameterFormulaProvider(),
+            new SquarePistonCylinderFormulaProvider()
         };
 
         static void DoAction(int userReaction)

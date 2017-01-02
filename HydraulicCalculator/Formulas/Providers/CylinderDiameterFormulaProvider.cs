@@ -8,16 +8,16 @@ namespace HydraulicCalculator.Formulas.Providers
         private double NominalOperatingPressure { get; set; }
         private double HydromechanicalEfficiency { get; set; }
 
-        public double CylinderDiameter { get; set; }
+        public double PistonCylinderDiameter { get; set; }
 
         protected override void WriteResult()
         {
-            Console.WriteLine("{0} = {1:F3}", "Діаметр поршня гідроциліндра", CylinderDiameter);
+            Console.WriteLine("{0} = {1:F3}", "Діаметр поршня гідроциліндра", PistonCylinderDiameter);
         }
 
         protected override void Calculate()
         {
-            CylinderDiameter = Math.Sqrt((4*HydraulicCylinderMaxPressure)/
+            PistonCylinderDiameter = Math.Sqrt((4*HydraulicCylinderMaxPressure)/
                                          (Math.PI*NominalOperatingPressure*HydromechanicalEfficiency));
         }
 
